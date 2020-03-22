@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="382.0" prefWidth="260.0" style="-fx-background-color: #2B2D41;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculatorfx.uiController">
+   <children>
+      <Pane prefHeight="162.0" prefWidth="260.0" style="-fx-background-color: #070B2D;">
+         <children>
+            <Label fx:id="output" contentDisplay="RIGHT" layoutX="7.0" layoutY="9.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="44.0" prefWidth="241.0" text="1004+6" textAlignment="RIGHT" textFill="#dd2049" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="24.0" /> 
+               </font>
+            </Label>
+            <Label fx:id="liveResult" contentDisplay="RIGHT" layoutX="7.0" layoutY="67.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="44.0" prefWidth="241.0" text="1,010" textAlignment="RIGHT" textFill="#dd2049" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="c2BTN" focusTraversable="false" layoutX="195.0" layoutY="120.0" onAction="#cButtonAction" prefHeight="44.0" prefWidth="65.0" style="-fx-background-color: #070B2D;" textFill="#00f184">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutY="162.0" style="-fx-background-color: #1B1E38;">
+         <children>
+            <Pane layoutY="44.0" prefHeight="44.0" prefWidth="260.0" style="-fx-background-color: #1B1E38;">
+               <children>
+                  <JFXButton fx:id="sevenBTN" focusTraversable="false" onAction="#numberProcess" prefHeight="44.0" prefWidth="65.0" style="-fx-background-color: #1B1E38;" text="7" textFill="#dd2049">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="eightBTN" focusTraversable="false" layoutX="65.0" onAction="#numberProcess" prefHeight="44.0" prefWidth="65.0" style="-fx-background-color: #1B1E38;" text="8" textFill="#dd2049">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="nineBTN" focusTraversable="false" layoutX="130.0" onAction="#numberProcess" prefHeight="44.0" prefWidth="65.0" style="-fx-background-color: #1B1E38;" text="9" textFill="#dd2049">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="mulBTN" focusTraversable="false" layoutX="194.0" onAction="#operatorProcess" prefHeight="44.0" prefWidth="65.0" style="-fx-background-color: #1B1E38;" textFill="#00f184">
+                     <font>
+                        <Font name="DejaVu Sans Mono Bold" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane layoutY="88.0" prefHeight="44.0" prefWidth="260.0">
+               <children>
+                  <JFXButton fx:id="fourBTN" focusTraversable="false" onAction="#numberProcess" prefHeight="44.0" prefWidth="65.0" style="-fx-background-color: #1B1E38;" text="4" textFill="#dd2049">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="fiveBTN" focusTraversable="false" layoutX="65.0" onAction="#numberProcess" prefHeight="44.0" prefWidth="65.0" style="-fx-background-color: #1B1E38;" text="5" textFill="#dd2049">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="sixBTN" focusTraversable="false" layoutX="130.0" onAction="#numberProcess" prefHeight="44.0" prefWidth="65.0" style="-fx-background-color: #1B1E38;" text="6" textFill="#dd2049">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="subBTN" focusTraversable="false" layoutX="195.0" onAction="#operatorProcess" prefHeight="44.0" prefWidth="65.0" style="-fx-background-color: #1B1E38;" textFill="#00f184">
+                     <font>
+                        <Font name="DejaVu Sans Mono Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane layoutY="132.0" prefHeight="44.0" prefWidth="260.0">
+               <children>
+                  <JFXButton fx:id="oneBTN" focusTraversable="false" onAction="#numberProcess" prefHeight="44.0" prefWidth="65.0" style="-fx-background-color: #1B1E38;" text="1" textFill="#dd2049">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="twoBTN" focusTraversable="false" layoutX="65.0" onAction="#numberProcess" prefHeight="44.0" prefWidth="65.0" style="-fx-background-color: #1B1E38;" text="2" textFill="#dd2049">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="threeBTN" focusTraversable="false" layoutX="130.0" onAction="#numberProcess" prefHeight="44.0" prefWidth="65.0" style="-fx-background-color: #1B1E38;" text="3" textFill="#dd2049">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="addBTN" focusTraversable="false" layoutX="195.0" onAction="#operatorProcess" prefHeight="44.0" prefWidth="65.0" style="-fx-background-color: #1B1E38;" textFill="#00f184">
+                     <font>
+                        <Font name="DejaVu Sans Mono Bold" size="19.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane layoutY="176.0" prefHeight="44.0" prefWidth="260.0">
+               <children>
+                  <JFXButton fx:id="zeroBTN" focusTraversable="false" onAction="#numberProcess" prefHeight="44.0" prefWidth="130.0" style="-fx-background-color: #1B1E38;" text="0" textFill="#dd2049">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="dotBTN" focusTraversable="false" layoutX="130.0" onAction="#numberProcess" prefHeight="44.0" prefWidth="65.0" style="-fx-background-color: #1B1E38;" text="." textFill="#dd2049">
+                     <font>
+                        <Font name="DejaVu Sans Mono Bold" size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="equalBTN" focusTraversable="false" layoutX="195.0" onAction="#operatorProcess" prefHeight="44.0" prefWidth="65.0" style="-fx-background-color: #1B1E38;" text="=" textFill="#00f184">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <Pane prefHeight="44.0" prefWidth="260.0">
+               <children>
+                  <JFXButton fx:id="cBTN" focusTraversable="false" layoutX="130.0" onAction="#parButtonAction" prefHeight="44.0" prefWidth="65.0" style="-fx-background-color: #1B1E38;" textFill="#dd2049">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="mBTN" focusTraversable="false" onAction="#mButtonAction" prefHeight="44.0" prefWidth="65.0" style="-fx-background-color: #1B1E38;" text="M" textFill="#dd2049">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="divBTN" focusTraversable="false" layoutX="195.0" onAction="#operatorProcess" prefHeight="44.0" prefWidth="65.0" style="-fx-background-color: #1B1E38;" textFill="#00f184">
+                     <font>
+                        <Font name="DejaVu Sans Mono Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="ansBTN" focusTraversable="false" layoutX="65.0" onAction="#mButtonAction" prefHeight="44.0" prefWidth="65.0" style="-fx-background-color: #1B1E38;" text="Ans" textFill="#dd2049">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
